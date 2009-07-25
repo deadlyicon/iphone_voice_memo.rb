@@ -1,0 +1,1 @@
+IPHONE_VOICE_MEMO_RECORDINGS_DIR = File.join(File.dirname(__FILE__),'Recordings')
