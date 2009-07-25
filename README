@@ -1,0 +1,26 @@
+What:
+
+  iphone_voice_memo.rb
+  
+  So the iPhone 3.0 uses an sqlite3 database to store data about its Voice Memo Recordings. This lib
+  provides an AciveRecord class called IPhoneVoiceMemo and some helper scripts
+
+How to use it:
+
+  - copy the /Recordings directory off your iPhone
+    - I used PhoneView (http://www.ecamm.com/mac/phoneview/)
+  - make sure the config.rb file knows where it is
+  - then run ./add_memo.rb some_sound_file.m4a 'the memo name'
+  - copy the new audio file and Recordings/Recordings.db back to the iphone
+  
+  note: make sure the voice memo app is closed when you copy because when it closes it writes its cache to the db
+  note: as far as I can tell it can play m4a and aiff files
+  note: using ffmpeg to convert files to m4a is crazy easy (port install ffmpeg, ffmpeg -i infile.mp3 outfile.m4a)
+  
+Requirements
+  - ActiveRecord
+
+
+Hope you enjoy
+  
+  

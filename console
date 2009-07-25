@@ -1,1 +1,1 @@
-irb -r config.rb -r model.rb
+irb -r config.rb -r iphone_voice_memo.rb
